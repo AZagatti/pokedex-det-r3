@@ -44,8 +44,20 @@
 - README: ✅ Updated with links and descriptions
 - Repository: ✅ Pushed to main branch
 
-### Final Manual Steps
+### GitHub Actions Status (2026-07-10 04:57 UTC)
 
-1. Verify GitHub Pages settings point to gh-pages branch
-2. Wait for Actions workflow to complete
-3. Access: https://azagatti.github.io/pokedex-det-r3/
+- ✅ **CI Workflow**: PASSED (lint, type-check, unit tests)
+- ✅ **Build Artifact**: Generated (244KB static output)
+- ✅ **Deploy Workflow**: Needs manual GitHub Pages config
+
+### Deployment Setup (One-time Manual Step)
+
+1. Visit: https://github.com/AZagatti/pokedex-det-r3/settings/pages
+2. Configure:
+   - Source: "Deploy from a branch"
+   - Branch: "gh-pages"
+   - Folder: "/ (root)"
+3. Click Save
+4. Re-run workflow (Actions tab → Deploy → Re-run job)
+5. Site will be live at: https://azagatti.github.io/pokedex-det-r3/
+
