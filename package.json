@@ -7,17 +7,38 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
+		"prepare": "svelte-kit sync || echo '' && lefthook install",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "oxlint .",
+		"format": "prettier --write .",
+		"test:unit": "vitest",
+		"test:e2e": "playwright test",
+		"test": "npm run test:unit -- --run && npm run test:e2e"
+	},
+	"dependencies": {
+		"zod": "^3.22.4"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.63.0",
-		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"svelte": "^5.56.1",
-		"svelte-check": "^4.6.0",
-		"typescript": "^6.0.3",
-		"vite": "^8.0.16"
+		"@playwright/test": "^1.40.0",
+		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@tailwindcss/vite": "^4.0.0",
+		"@testing-library/svelte": "^4.0.0",
+		"@vitest/ui": "^1.0.0",
+		"autoprefixer": "^10.4.18",
+		"jsdom": "^23.0.0",
+		"lefthook": "^1.5.0",
+		"lucide-svelte": "^0.294.0",
+		"oxlint": "^0.7.0",
+		"postcss": "^8.4.32",
+		"prettier": "^3.0.0",
+		"svelte": "^5.0.0",
+		"svelte-check": "^3.0.0",
+		"tailwindcss": "^4.0.0",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.0",
+		"vitest": "^1.0.0"
 	}
 }

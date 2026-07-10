@@ -1,0 +1,9 @@
+.gitignore
+.eslintignore
+node_modules
+dist
+build
+.svelte-kit
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
