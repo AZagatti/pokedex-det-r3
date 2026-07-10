@@ -1,14 +1,14 @@
 import adapter from '@sveltejs/adapter-static';
 
 export default {
-	kit: {
-		adapter: adapter({
-			fallback: '404.html',
-			precompress: false,
-			strict: false
-		}),
-		paths: {
-			base: '/pokedex-det-r3'
-		}
-	}
+  kit: {
+    adapter: adapter({
+      fallback: '404.html',
+      precompress: false,
+      strict: false,
+    }),
+    paths: {
+      base: process.argv.includes('dev') ? '' : '/pokedex-det-r3',
+    },
+  },
 };

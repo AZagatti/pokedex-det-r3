@@ -9,4 +9,3 @@
 - Dev server running - verified home, list, search, about pages work
 - **Issue**: Pokemon detail page route not matching - need to debug route matching
 - Next: Fix dynamic route, run e2e tests, set up CI/CD, deploy to GitHub Pages
-
