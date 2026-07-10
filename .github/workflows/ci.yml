@@ -16,10 +16,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run check
 
   lint:
@@ -29,10 +29,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run lint
 
   test:
@@ -42,10 +42,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run test:unit -- --run
 
   build:
@@ -55,8 +55,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run build
