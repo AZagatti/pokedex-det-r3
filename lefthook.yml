@@ -5,6 +5,7 @@ commands:
     run: npx oxlint {staged_files}
   format:
     glob: '*.{ts,svelte,js}'
+    exclude: '**/{[*}/*.{ts,svelte,js}'
     run: npx prettier --write {staged_files}
   test:
     glob: '*.{ts,svelte,js}'
@@ -13,7 +14,9 @@ pre-commit:
   commands:
     lint:
       glob: 'src/**/*.{ts,svelte,js}'
+      exclude: '**/{[*}/*.{ts,svelte,js}'
       run: npx oxlint {staged_files}
     format:
       glob: 'src/**/*.{ts,svelte,js}'
+      exclude: '**/{[*}/*.{ts,svelte,js}'
       run: npx prettier --check {staged_files}

@@ -7,3 +7,6 @@ build
 pnpm-lock.yaml
 yarn.lock
 package-lock.json
+**/{*}/*.svelte
+**/{*}/*.ts
+tests/e2e/+page.spec.ts

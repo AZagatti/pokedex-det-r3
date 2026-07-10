@@ -25,5 +25,3 @@ test.describe('Pokédex', () => {
     await expect(heading).toContainText('About Pokédex');
   });
 });
-
-

@@ -17,6 +17,7 @@
 ## Performance & Deployment Status
 
 ### Lighthouse Audit (2026-07-10)
+
 - Accessibility: 100/100 ✅
 - Best Practices: 100/100 ✅
 - SEO: 100/100 ✅
@@ -26,6 +27,7 @@
   - TTFB: 9ms (target: < 800ms)
 
 ### Build Status
+
 - Build size: 244KB (optimized static output)
 - All pages prerendered for fast GitHub Pages delivery
 - Static adapter configured with 404 fallback
@@ -33,6 +35,7 @@
 - Code quality: oxlint clean, prettier formatted
 
 ### Deployment Readiness
+
 - GitHub Actions workflow: ✅ Ready
   - Lint on push
   - Unit tests on build
@@ -42,7 +45,7 @@
 - Repository: ✅ Pushed to main branch
 
 ### Final Manual Steps
+
 1. Verify GitHub Pages settings point to gh-pages branch
 2. Wait for Actions workflow to complete
 3. Access: https://azagatti.github.io/pokedex-det-r3/
-

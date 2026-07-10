@@ -12,7 +12,7 @@
 # Error details
 
 ```
-Error: browserType.launch: 
+Error: browserType.launch:
 ╔══════════════════════════════════════════════════════╗
 ║ Host system is missing dependencies to run browsers. ║
 ║ Please install them with the following command:      ║
